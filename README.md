@@ -111,7 +111,7 @@ Como ves, si bien no podemos, por ejemplo, sacar banderas, sí podemos represent
 
 ![](https://github.com/flbulgarelli/buscaminas-gobstones/raw/master/Captura5.png)
 
-Para darte una mano con esta representación, en `Buscaminas.gbl` ya dejamos algunas funciones auxiliares que te pueden servir como punto de partida:
+Para darte una mano con esta representación, en `Buscaminas.gbs` ya dejamos algunas funciones auxiliares que te pueden servir como punto de partida:
 
 ```gobstones
 function hayPista() {

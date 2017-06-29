@@ -1,3 +1,7 @@
+// ************
+// * Programa *
+// ************
+
 interactive program {
   INIT -> {
     PrepararTablero()
@@ -22,6 +26,11 @@ interactive program {
   }
 }
 
+// ******************************
+// * Procedimientos Principales *
+// ******************************
+
+
 procedure PrepararTablero() {
   // COMPLETAR
 }
@@ -30,7 +39,45 @@ procedure PonerOSacarBandera() {
   // COMPLETAR
 }
 
-
 procedure DestaparSiNoHayBandera() {
   // COMPLETAR
+}
+
+// ******************
+// * Representación *
+// ******************
+
+function hayPista() {
+  return(hayBolitas(Verde))
+}
+
+function hayBandera() {
+  return (nroBolitas(Rojo) == 1)
+}
+
+function hayMina() {
+  return (nroBolitas(Negro) ==1)
+}
+
+function estaTapada() {
+  return (nroBolitas(Azul) == 1)
+}
+
+function colorMarca() {
+  return (Rojo)
+}
+
+function hayLineaAl(dir) {
+  Mover(dir)
+  return(hayLinea())
+}
+
+function hayLinea() {
+  return (nroBolitas(Rojo) ==2)
+}
+
+procedure MoverHacia(dir) {
+  if(puedeMover(dir) && not hayLineaAl(dir)) {
+    Mover(dir)
+  }
 }
