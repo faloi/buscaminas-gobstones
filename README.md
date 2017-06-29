@@ -3,7 +3,7 @@
 > Nota: para este implementar este juego necesitás:
 >
 > * Saber fundamentos de programación y conocer el lenguaje Gobstones, dos temas que podés aprender en [**Mumuki**](https://mumuki.io)
-> * Usar la herramienta para Proyectos **Gobstones Web** y Vestimentas, que podés aprender con este [mini tutorial](https://gobstones.github.io/gobstones-web/#/code?url=https://gobstones.github.io/proyectos-jr/proyectos/Cap.2/2.1.2.Bolitas, caramelos o tomates.gbp):
+> * Usar la herramienta para Proyectos **Gobstones Web** y Vestimentas, que podés aprender con este [mini tutorial](https://gobstones.github.io/gobstones-web/#/code?url=https%3A%2F%2Fgobstones.github.io%2Fproyectos-jr%2Fproyectos%2FCap.2%2F2.1.2.Bolitas%2C%20caramelos%20o%20tomates.gbp):
 
 ## Objetivos
 
