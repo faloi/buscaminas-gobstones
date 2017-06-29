@@ -15,7 +15,7 @@
 
 El juego iniciará con un tablero con _minas_, totalmente _tapadas_:
 
-<img src="https://github.com/fedescarpa/buscaminas-gobstones/raw/master/Captura1.png" alt style="max-width: 40rem">
+<img src="https://github.com/flbulgarelli/buscaminas-gobstones/raw/master/Captura1.png" alt style="max-width: 40rem">
 
 Como ves, vamos a dejar siempre las últimas dos filas del tablero para mostrar estadísticas: la cantidad de _marcas_ (identificadas con banderas) y la cantidad de minas.
 
@@ -68,7 +68,7 @@ Cuando el juego arranca, debe dejar listo para jugar el tablero, mediante el pro
 * si no tenés tanta suerte, se va a destapar una pista, que te va a dar decir cuantas minas hay a su alrededor;
 * y si tenés mala suerte (:cry:) explotará una bomba y terminará el juego.
 
-<img src="https://github.com/fedescarpa/buscaminas-gobstones/raw/master/Captura2.png" alt style="max-width: 40rem">
+<img src="https://github.com/flbulgarelli/buscaminas-gobstones/raw/master/Captura2.png" alt style="max-width: 40rem">
 
 Todo esto lo tenés que implementar en el procedimiento `DestaparSiNoHayBandera()`.
 
@@ -83,13 +83,13 @@ Todo esto lo tenés que implementar en el procedimiento `DestaparSiNoHayBandera(
 
 Ojo: no te olvides de actualizar los contadores de banderas.
 
-<img src="https://github.com/fedescarpa/buscaminas-gobstones/raw/master/Captura3.png" alt style="max-width: 40rem">
+<img src="https://github.com/flbulgarelli/buscaminas-gobstones/raw/master/Captura3.png" alt style="max-width: 40rem">
 
 ### 5. Ganando el juego
 
 ¿Y cómo gano el juego? Encontrando todas las minas y señalándolas con banderas. Así que tené en cuenta que `PonerOSacarBandera` y `DestaparSiNoHayBandera` deberán chequear también que hayas puesto todas las banderas bien.
 
-<img src="https://github.com/fedescarpa/buscaminas-gobstones/raw/master/Captura4.png" alt style="max-width: 40rem">
+<img src="https://github.com/flbulgarelli/buscaminas-gobstones/raw/master/Captura4.png" alt style="max-width: 40rem">
 
 ### 6. ¿Y las bolitas?
 
@@ -109,7 +109,7 @@ Como ves, si bien no podemos, por ejemplo, sacar banderas, sí podemos represent
 * Un mina (tapada) se representa con una bolita negra.
 * Las pistas (número del 1 al 8) se representan con 1 a 8 bolitas verdes.
 
-<img src="https://github.com/fedescarpa/buscaminas-gobstones/raw/master/Captura5.png" alt style="max-width: 40rem">
+<img src="https://github.com/flbulgarelli/buscaminas-gobstones/raw/master/Captura5.png" alt style="max-width: 40rem">
 
 Para darte una mano con esta representación, en `Buscaminas.gbs` ya dejamos algunas funciones auxiliares que te pueden servir como punto de partida:
 
@@ -149,6 +149,12 @@ procedure MoverHacia(dir) {
   }
 }
 ```
+
+### 7. Arrancando fácil
+
+Entrá [acá](https://gobstones.github.io/gobstones-web/#/code?github=flbulgarelli/buscaminas-gobstones) y empezá a programar :smile:.
+
+:warning: ¡Ojo, no te olvides de guardar lo que vas haciendo!
 
 ##  Créditos
 
