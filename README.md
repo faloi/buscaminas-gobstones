@@ -22,7 +22,7 @@ Como ves, vamos a dejar siempre las últimas dos filas del tablero para mostrar 
 * `barra espaciadora`: para destapar una celda; (:warning: ¡Cuidado! Si hay una mina va a explotar!)
 * `enter`: para colocar una bandera (porque creemos que allí hay una mina :wink:)
 
-Lo que acá vamos a necesitar no es un programa común, sino uno interactivo, que se defina así:
+Lo que acá vamos a necesitar no es un programa común, sino uno interactivo, que se defina así (que ya dejamos definido por vos en `Buscaminas.gps`:
 
 ```gobstones
 interactive program {
@@ -105,6 +105,45 @@ Como ves, si bien no podemos, por ejemplo, sacar banderas, sí podemos represent
 * Las pistas (número del 1 al 8) se representan con 1 a 8 bolitas verdes.
 
 ![](https://github.com/flbulgarelli/buscaminas-gobstones/raw/master/Captura5.png)
+
+Para darte una mano con esta representación, en `Buscaminas.gbl` ya dejamos algunas funciones auxiliares que te pueden servir como punto de partida:
+
+```gobstones
+function hayPista() {
+  return(hayBolitas(Verde))
+}
+
+function hayBandera() {
+  return (nroBolitas(Rojo) == 1)
+}
+
+function hayMina() {
+  return (nroBolitas(Negro) ==1)
+}
+
+function estaTapada() {
+  return (nroBolitas(Azul) == 1)
+}
+
+function colorMarca() {
+  return (Rojo)
+}
+
+function hayLineaAl(dir) {
+  Mover(dir)
+  return(hayLinea())
+}
+
+function hayLinea() {
+  return (nroBolitas(Rojo) ==2)
+}
+
+procedure MoverHacia(dir) {
+  if(puedeMover(dir) && not hayLineaAl(dir)) {
+    Mover(dir)
+  }
+}
+```
 
 ##  Créditos
 

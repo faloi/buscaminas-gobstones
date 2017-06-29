@@ -22,128 +22,15 @@ interactive program {
   }
 }
 
-procedure PonerLinea(){
-  IrAlOrigen()
-  Mover(Norte)
-  Linea()
-  IrAlComienzo()
+procedure PrepararTablero() {
+  // COMPLETAR
 }
 
-procedure Linea(){
-  while( puedeMover(Este)){
-    PonerN(2, Rojo)
-    Mover(Este)
-  }
-  PonerN(2, Rojo)
+procedure PonerOSacarBandera() {
+  // COMPLETAR
 }
 
 
-procedure ActualizarContadorBanderasYVolver(){
-    Marcar()
-    ActualizarContadorBanderas()
-    IrAMarca()
-    SacarMarca()
+procedure DestaparSiNoHayBandera() {
+  // COMPLETAR
 }
-
-
-procedure PonerOSacarBandera(){
-  if(hayBandera()){
-    SacarBandera()
-  } else {
-    PonerBandera()
-  }
-  ActualizarContadorBanderasYVolver()
-  Gano()
-}
-
-procedure DestaparVecinas() {
-  MarcarTodas()
-  DestaparMarcadas()
-}
-
-procedure DestaparCelda(){
-  if(estaTapada()){
-    Sacar(Azul)
-  }
-}
-
-procedure TaparTablero(){
-  IrAlComienzo()
-  while(haySiguiente()){
-    TaparCelda()
-    IrAlSiguiente()
-  }
-  TaparCelda()
-  IrAlComienzo()
-}
-procedure PonerPista(){
-  if (not hayMina()){
-    PonerN(cantMinasCercanas(), Verde)
-  }
-}
-
-procedure PonerTodasLasPistas(){
-  while(haySiguiente()){
-    PonerPista()
-    IrAlSiguiente()
-  }
-  PonerPista()
-  IrAlComienzo()
-}
-
-procedure PrepararTablero(){
-  TaparTablero()
-  PonerTodasLasPistas()
-  ActualizarContadores()
-}
-
-procedure ActualizarContadores(){
-  ActualizarContadorBanderas()
-  ActualizarContadorMinas()
-  IrAlComienzo()
-}
-
-procedure DestaparMarcada() {
-  if (hayMarca() && not esPrimeraMarca()){
-    SacarMarca()
-    DestaparCelda()
-  }
-}
-
-procedure DestaparMarcadas() {
-  while(haySiguiente()){
-    DestaparMarcada()
-    IrAlSiguiente()
-  }
-  DestaparMarcada()
-  IrAPrimeraMarca()
-  SacarTodas(Rojo)
-}
-
-procedure Gano(){
-  if(totalMinasConBandera() == totalMinas()){
-  DestaparTodas()
-  }
-}
-
-procedure DestaparSiNoHayBandera(){
-  if (not hayBandera() && not hayMina()){
-    DestaparCelda()
-    DestaparVecinas()
-  }
-
-  if (hayMina()) {
-    DestaparTodas()
-  }
-}
-
-procedure SacarBanderasIncorrectas(){
-  IrAlComienzo()
-  while(haySiguiente()){
-    if(hayBandera() && not hayMina()){
-      SacarBandera()
-    }
-    IrAlSiguiente()
-  }
-}
-
