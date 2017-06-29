@@ -1,5 +1,10 @@
 # Buscaminas :triangular_flag_on_post: :bomb:
 
+> Nota: para este implementar este juego necesitás:
+>
+> * Saber fundamentos de programación y conocer el lenguaje Gobstones, dos temas que podés aprender en [**Mumuki**](https://mumuki.io)
+> * Usar la herramienta para Proyectos **Gobstones Web** y Vestimentas, que podés aprender con este [mini tutorial](https://gobstones.github.io/gobstones-web/#/code?url=https://gobstones.github.io/proyectos-jr/proyectos/Cap.2/2.1.2.Bolitas, caramelos o tomates.gbp):
+
 ## Objetivos
 
 ¡Hora de hacer nuestro primer juego! Queremos programar el clásico buscaminas (así que si nunca lo jugaste antes te recomendamos que empieces por hacerlo y aprender sus reglas :stuck_out_tongue:)
