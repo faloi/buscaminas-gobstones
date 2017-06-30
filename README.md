@@ -70,7 +70,7 @@ Cuando el juego arranca, debe dejar listo para jugar el tablero, mediante el pro
 
 <img src="https://github.com/flbulgarelli/buscaminas-gobstones/raw/master/Captura2.png" alt style="max-width: 40rem">
 
-Todo esto lo tenés que implementar en el procedimiento `DestaparSiNoHayBandera()`.
+Todo esto lo tenés que implementar en el procedimiento `DestaparSiNoHayBandera()`. Como lo sugiere el nombre del procedimiento, si ya hay una bandera, por más que presiones la barra especiadora no debería pasar nada: no queremos accidentalmente explotar minas que ya encontramos. 
 
 > Tip a la hora de jugar: obviamente al principio vas a tener que jugar al azar, después te va a convenir destapar usando las pistas 😉
 
@@ -108,6 +108,7 @@ Como ves, si bien no podemos, por ejemplo, sacar banderas, sí podemos represent
 * Un hueco se representa con una celda sin ninguna otra bolita.
 * Un mina se representa con una bolita negra.
 * Las pistas (número del 1 al 8) se representan con 1 a 8 bolitas verdes.
+* La _línea_ inferior que separa el área de juego de las estadísticas se representa mediante dos bolitas rojas. 
 
 <img src="https://github.com/flbulgarelli/buscaminas-gobstones/raw/master/Captura5.png" alt style="max-width: 40rem">
 
@@ -128,10 +129,6 @@ function hayMina() {
 
 function estaTapada() {
   return (nroBolitas(Azul) == 1)
-}
-
-function colorMarca() {
-  return (Rojo)
 }
 
 function hayLineaAl(dir) {
