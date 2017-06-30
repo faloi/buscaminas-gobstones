@@ -17,7 +17,10 @@ El juego iniciará con un tablero con _minas_, totalmente _tapadas_:
 
 <img src="https://github.com/flbulgarelli/buscaminas-gobstones/raw/master/Captura1.png" alt style="max-width: 40rem">
 
-Como ves, vamos a dejar siempre las últimas dos filas del tablero para mostrar estadísticas: la cantidad de _banderas_ (identificadas con banderas) y la cantidad de minas.
+Como ves, vamos a dejar siempre las últimas dos filas del tablero para mostrar estadísticas: la cantidad de _banderas_ que quedan por colocar y la cantidad de minas: 
+
+* la cantidad de banderas nos dice cuántas banderas podemos poner en el tablero. Inicialmente este número es igual a la cantidad de minas (porque, claro, necesitamos una para señalar cada mina del tablero 😛), pero a medida que vayamos colocando banderas, el número se va a ir decrementando;
+* la cantidad de minas que hay en el tablero: este número no cambia durante la partida. 
 
 ### 2. Un programa interactivo
 
