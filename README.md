@@ -3,7 +3,7 @@
 > Nota: para este implementar este juego necesitás:
 >
 > * Saber fundamentos de programación y conocer el lenguaje Gobstones, dos temas que podés aprender en [**Mumuki**](https://mumuki.io)
-> * Usar la herramienta para Proyectos **Gobstones Web** y Vestimentas, que podés aprender con este [mini tutorial](https://gobstones.github.io/gobstones-web/#/code?url=https%3A%2F%2Fgobstones.github.io%2Fproyectos-jr%2Fproyectos%2FCap.2%2F2.1.2.Bolitas%2C%20caramelos%20o%20tomates.gbp):
+> * Usar la herramienta para Proyectos **Gobstones Web** y Vestimentas, que podés aprender con este [mini tutorial](https://gobstones.github.io/gobstones-web/#/code?url=https%3A%2F%2Fgobstones.github.io%2Fproyectos-jr%2Fproyectos%2FCap.2%2F2.1.2.Bolitas%2C%20caramelos%20o%20tomates.gbp)
 
 ## Objetivos
 
@@ -17,17 +17,17 @@ El juego iniciará con un tablero con _minas_, totalmente _tapadas_:
 
 <img src="https://github.com/flbulgarelli/buscaminas-gobstones/raw/master/Captura1.png" alt style="max-width: 40rem">
 
-Como ves, vamos a dejar siempre las últimas dos filas del tablero para mostrar estadísticas: la cantidad de _marcas_ (identificadas con banderas) y la cantidad de minas.
+Como ves, vamos a dejar siempre las últimas dos filas del tablero para mostrar estadísticas: la cantidad de _banderas_ (identificadas con banderas) y la cantidad de minas.
 
 ### 2. Un programa interactivo
 
 ¿Y qué hace nuestro programa? ¡Dejarnos jugar! La idea es que usando el teclado podamos recorrer el tablero e intentar encontrar las minas sin que exploten. En concreto, el objetivo es que podamos presionar las siguientes teclas:
 
-* `arriba`, `abajo`, `izquiera`, `derecha`: para permitirnos desplazar en ese sentido;
-* `barra espaciadora`: para destapar una celda; (:warning: ¡Cuidado! Si hay una mina va a explotar!)
+* `arriba`, `abajo`, `izquiera`, `derecha`: para permitirnos desplazar en ese sentido
+* `barra espaciadora`: para destapar una celda (:warning: ¡Cuidado! Si hay una mina va a explotar)
 * `enter`: para colocar una bandera (porque creemos que allí hay una mina :wink:)
 
-Lo que acá vamos a necesitar no es un programa común, sino uno interactivo, que se defina así (que ya dejamos definido por vos en `Buscaminas.gps`:
+Lo que acá vamos a necesitar no es un programa común sino uno interactivo, que se defina así (que ya dejamos definido por vos en `Buscaminas.gps`):
 
 ```gobstones
 interactive program {
@@ -106,7 +106,7 @@ Como ves, si bien no podemos, por ejemplo, sacar banderas, sí podemos represent
 * Una bandera se representa con una bolita roja.
 * Un celda tapada se representa con una bolita azul.
 * Un hueco se representa con una celda sin ninguna otra bolita.
-* Un mina (tapada) se representa con una bolita negra.
+* Un mina se representa con una bolita negra.
 * Las pistas (número del 1 al 8) se representan con 1 a 8 bolitas verdes.
 
 <img src="https://github.com/flbulgarelli/buscaminas-gobstones/raw/master/Captura5.png" alt style="max-width: 40rem">
