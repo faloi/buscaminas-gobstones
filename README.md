@@ -1,4 +1,4 @@
-# Buscaminas :triangular_flag_on_post: :bomb:
+# Buscaminas 🚩 💣
 
 > Nota: para este implementar este juego necesitás:
 >
@@ -7,7 +7,7 @@
 
 ## Objetivos
 
-¡Hora de hacer nuestro primer juego! Queremos programar el clásico buscaminas (así que si nunca lo jugaste antes te recomendamos que empieces por hacerlo y aprender sus reglas :stuck_out_tongue:)
+¡Hora de hacer nuestro primer juego! Queremos programar el clásico buscaminas (así que si nunca lo jugaste antes te recomendamos que empieces por hacerlo y aprender sus reglas 😛)
 
 ¡Pero no tan rápido! Veamos algunos requerimientos mínimos de nuestro juego:
 
@@ -24,7 +24,7 @@ Como ves, vamos a dejar siempre las últimas dos filas del tablero para mostrar 
 ¿Y qué hace nuestro programa? ¡Dejarnos jugar! La idea es que usando el teclado podamos recorrer el tablero e intentar encontrar las minas sin que exploten. En concreto, el objetivo es que podamos presionar las siguientes teclas:
 
 * `arriba`, `abajo`, `izquiera`, `derecha`: para permitirnos desplazar en ese sentido
-* `barra espaciadora`: para destapar una celda (:warning: ¡Cuidado! Si hay una mina va a explotar)
+* `barra espaciadora`: para destapar una celda (⚠️ ¡Cuidado! Si hay una mina va a explotar)
 * `enter`: para colocar una bandera (porque creemos que allí hay una mina :wink:)
 
 Lo que acá vamos a necesitar no es un programa común sino uno interactivo, que se defina así (que ya dejamos definido por vos en `Buscaminas.gps`):
@@ -62,17 +62,17 @@ Cuando el juego arranca, debe dejar listo para jugar el tablero, mediante el pro
 
 ### 4. Destapando las minas
 
-¡Ahora comienza la acción! :muscle: moviéndonos con las flechas del teclado, vamos a recorrer el tablero, y destapar alguna celda, usando la `barra espaciadora`:
+¡Ahora comienza la acción! 💪  moviéndonos con las flechas del teclado, vamos a recorrer el tablero, y destapar alguna celda, usando la `barra espaciadora`:
 
 * si tenés buena suerte, se va a destapar un área grande en la que no hay bombas;
 * si no tenés tanta suerte, se va a destapar una pista, que te va a dar decir cuantas minas hay a su alrededor;
-* y si tenés mala suerte (:cry:) explotará una bomba y terminará el juego.
+* y si tenés mala suerte (😭) explotará una bomba y terminará el juego.
 
 <img src="https://github.com/flbulgarelli/buscaminas-gobstones/raw/master/Captura2.png" alt style="max-width: 40rem">
 
 Todo esto lo tenés que implementar en el procedimiento `DestaparSiNoHayBandera()`.
 
-> Tip a la hora de jugar: obviamente al principio vas a tener que jugar al azar, después te va a convenir destapar usando las pistas :wink:
+> Tip a la hora de jugar: obviamente al principio vas a tener que jugar al azar, después te va a convenir destapar usando las pistas 😉
 
 ### 4. Colocando banderas
 
@@ -152,9 +152,9 @@ procedure MoverHacia(dir) {
 
 ### 7. Arrancando fácil
 
-Entrá [acá](https://gobstones.github.io/gobstones-web/#/code?github=flbulgarelli/buscaminas-gobstones) y empezá a programar :smile:.
+Entrá [acá](https://gobstones.github.io/gobstones-web/#/code?github=flbulgarelli/buscaminas-gobstones) y empezá a programar 😀 .
 
-:warning: ¡Ojo, no te olvides de guardar lo que vas haciendo!
+⚠️ ¡Ojo, no te olvides de guardar lo que vas haciendo!
 
 ##  Créditos
 
