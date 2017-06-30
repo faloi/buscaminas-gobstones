@@ -90,7 +90,12 @@ Ojo: no te olvides de actualizar los contadores de banderas.
 
 ### 5. Ganando el juego
 
-¿Y cómo gano el juego? Encontrando todas las minas y señalándolas con banderas. Así que tené en cuenta que `PonerOSacarBandera` y `DestaparSiNoHayBandera` deberán chequear también que hayas puesto todas las banderas bien.
+¿Y cómo gano el juego? Cuando se den al mismo tiempo dos condiciones: 
+
+1. encontrando todas las minas y señalándolas con banderas;
+2. y destapando todas las demás celdas.
+
+Así que tené en cuenta que `PonerOSacarBandera` y `DestaparSiNoHayBandera` deberán chequear también que hayas puesto todas las banderas bien.
 
 <img src="https://github.com/flbulgarelli/buscaminas-gobstones/raw/master/Captura4.png" alt style="max-width: 40rem">
 
